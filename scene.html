@@ -40,12 +40,12 @@
         const createScene = function () {
             // STEP 8a: Create a new BABYLON scene, passing in the engine as an argument
             const scene = new BABYLON.Scene(engine);
-            BABYLON.MeshBuilder.CreateBox("box", {}); // Create box mesh object
-            BABYLON.MeshBuilder.CreateSphere("sphere", {});
-            BABYLON.MeshBuilder.CreateTorus("torus", {});
-            BABYLON.MeshBuilder.CreateCylinder("cone", {});
-            BABYLON.MeshBuilder.CreateDisc("disc", {});
-            BABYLON.MeshBuilder.CreateTorusKnot("torusKnot", {});
+            const box = BABYLON.MeshBuilder.CreateBox("box", {}); // Create box mesh object
+            const sphere = BABYLON.MeshBuilder.CreateSphere("sphere", {});
+            const torus = BABYLON.MeshBuilder.CreateTorus("torus", {});
+            const cone = BABYLON.MeshBuilder.CreateCylinder("cone", {});
+            const disc = BABYLON.MeshBuilder.CreateDisc("disc", {});
+            const torusKnot = BABYLON.MeshBuilder.CreateTorusKnot("torusKnot", {});
 
             torusKnot.position.x = 8;
             disc.position.y = 4;
